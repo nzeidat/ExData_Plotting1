@@ -1,4 +1,5 @@
-install.packages("lubridate")
+## if "lubridate" package is not installed already, install it
+if (!"lubridate" %in% installed.packages()){ install.packages("lubridate")} 
 library(lubridate)
 
 ## Read in the data

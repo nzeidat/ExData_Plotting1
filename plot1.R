@@ -7,7 +7,7 @@ epc <- read.table(file="household_power_consumption.txt",
 required_data <- subset(epc, epc$Date == '1/2/2007' |epc$Date == '2/2/2007')
 
 ## Open the png device
-png(filename="/c/Users/Nidals/datasciencecoursera/courses/04_ExploratoryAnalysis/ExData_Plotting1/ExData_Plotting1/plo1.png")
+png(filename="plo1.png")
 ##Plot the data
 hist(required_data$Global_active_power, 
               col="red",
