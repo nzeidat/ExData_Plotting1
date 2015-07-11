@@ -18,7 +18,7 @@ req_Data <- subset(epc, epc$Date == '1/2/2007' |epc$Date == '2/2/2007',
 Updated_rd <- cbind(req_Data, DateTime = dmy(req_Data$Date) + hms(req_Data$Time))
 
 ## Open the png device
-png(filename="plo4.png")
+png(filename="plot4.png")
 
 ## A plot that contains 4 plots (2x2)
 par(mfrow = c(2,2))

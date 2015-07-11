@@ -10,7 +10,7 @@ epc <- read.table(file="household_power_consumption.txt",
 req_Data <- subset(epc, epc$Date == '1/2/2007' |epc$Date == '2/2/2007', select = c(Date, Time, Sub_metering_1, Sub_metering_2, Sub_metering_3))
 Updated_rd <- cbind(req_Data, DateTime = dmy(req_Data$Date) + hms(req_Data$Time))
 ## Open the png device
-png(filename="plo3.png")
+png(filename="plot3.png")
 
 ## Plot Energy_submetering_1
 with(Updated_rd, 

@@ -11,7 +11,7 @@ req_Data <- subset(epc, epc$Date == '1/2/2007' |epc$Date == '2/2/2007', select =
 Updated_rd <- cbind(req_Data, DateTime = dmy(req_Data$Date) + hms(req_Data$Time))
 
 ## Open the png device
-png(filename="plo2.png")
+png(filename="plot2.png")
 ##Plot the data
 
 with(Updated_rd, 
